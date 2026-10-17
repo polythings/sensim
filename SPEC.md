@@ -19,6 +19,7 @@
 | D8 | Behaviour runs on events (a write, a command, a state change, a scenario step), never per sample. Signals are compiled Rust. Behaviour is declarative rules, with a sandboxed script for what rules can't express (§8.3, Q3). | Proposed |
 | D9 | Every fault and behaviour is a setting that can be turned on or off or tuned, per fleet, device type, device, or at runtime. Settings are named for the mechanism they change (§15). | Proposed |
 | D10 | Device clocks follow a simulation clock that runs in real time by default, and can run faster than real time or as fast as possible to generate history (§5.4). | Proposed |
+| D11 | Domain: **sensim.dev** (registered 2026-10-17). Nothing is served there yet. | **Accepted** |
 
 ---
 
