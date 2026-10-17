@@ -1,0 +1,27 @@
+# Dependabot keeps every dependency current: one pull request a week per ecosystem with its minor and patch
+# updates, and one per major update. Security updates don't wait for the schedule. See CONTRIBUTING.md,
+# "Dependencies".
+#
+# A new version is proposed once it's 7 days old (security updates at once): most compromised releases are
+# found and pulled within days.
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: weekly }
+    cooldown: { default-days: 7 }
+    groups:
+      actions: { update-types: [minor, patch] }
+
+  - package-ecosystem: cargo
+    directory: /
+    schedule: { interval: weekly }
+    cooldown: { default-days: 7 }
+    groups:
+      cargo: { update-types: [minor, patch] }
+
+  - package-ecosystem: rust-toolchain
+    directory: /
+    schedule: { interval: weekly }
+    cooldown: { default-days: 7 }

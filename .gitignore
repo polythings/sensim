@@ -1,0 +1,13 @@
+# Build output
+target/
+
+# Secrets: never commit env files except the example
+.env*
+!.env.example
+
+# Local
+.DS_Store
+*.pem
+
+# Claude Code worktrees
+/.claude/worktrees/

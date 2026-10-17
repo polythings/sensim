@@ -1,0 +1,28 @@
+[workspace]
+resolver = "3"
+members = ["crates/sensim"]
+
+[workspace.package]
+version = "0.0.0"
+edition = "2024"
+license = "Apache-2.0"
+repository = "https://github.com/polythings/sensim"
+
+[profile.release]
+debug = "line-tables-only"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+unreachable_pub = "warn"
+missing_debug_implementations = "warn"
+rust_2018_idioms = { level = "warn", priority = -1 }
+
+[workspace.lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"
+must_use_candidate = "allow"
+allow_attributes = "warn"
+dbg_macro = "warn"
+todo = "warn"
+unwrap_used = "warn"

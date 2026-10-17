@@ -1,0 +1,2 @@
+allow-unwrap-in-tests = true
+doc-valid-idents = ["IoT", "OPC", "UA", "LwM2M", "CoAP", "Sparkplug", ".."]
